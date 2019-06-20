@@ -6,10 +6,10 @@ function Home() {
     <div>
       <ul>
         <li>
-          <Link to="/assignment-1">About</Link>
+          <Link to="/assignment-1">Go to Assignment 1</Link>
         </li>
         <li>
-          <Link to="/assignment-2">Topics</Link>
+          <Link to="/assignment-2">Go to Assignment 2</Link>
         </li>
       </ul>
     </div>
