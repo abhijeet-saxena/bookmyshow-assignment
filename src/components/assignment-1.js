@@ -20,7 +20,7 @@ class Assignment1 extends React.Component {
         userValues: userInput.split(",")
       });
       userValues.forEach(element => {
-        if (element.indexOf("-") == -1) {
+        if (element.indexOf("-") === -1) {
           if (this.state.existingArray.indexOf(Number(element)) === -1)
             this.addToFinalArray(finalArray, Number(element));
           else this.addToDuplicatesArray(duplicatesArray, Number(element));
@@ -46,11 +46,11 @@ class Assignment1 extends React.Component {
   };
 
   addToFinalArray = (finalArray, elemenToAdd) => {
-    if (finalArray.indexOf(elemenToAdd) == -1) finalArray.push(elemenToAdd);
+    if (finalArray.indexOf(elemenToAdd) === -1) finalArray.push(elemenToAdd);
   };
 
   addToDuplicatesArray = (duplicatesArray, elemenToAdd) => {
-    if (duplicatesArray.indexOf(elemenToAdd) == -1)
+    if (duplicatesArray.indexOf(elemenToAdd) === -1)
       duplicatesArray.push(elemenToAdd);
   };
 
