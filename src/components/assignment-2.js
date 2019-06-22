@@ -51,7 +51,7 @@ class Assignment2 extends React.Component {
           <p style={{ color: "#929292" }}>Applied filters </p>
 
           {this.state.languages.length === 0 ? (
-            "Loading"
+            <p style={{ color: "#929292" }}>Loading </p>
           ) : (
             <MovieGrid moviesData={this.state.moviesData} />
           )}

@@ -5,14 +5,12 @@ class Preview extends React.Component {
   state = {};
 
   componentDidMount = () => {
-    console.log(this.props.movie);
-    if (this.props.movie) {
+    if (this.props.movie.TrailerURL) {
       this.setState({
         trailerURL: `https://www.youtube.com/embed/${
           this.props.movie.TrailerURL.split("=")[1].split("&")[0]
         }`
       });
-      console.log(this.props.movie.EventGenre);
     }
   };
 

@@ -57,19 +57,30 @@ class MovieGrid extends React.Component {
         .getElementById("movies-grid")
         .removeChild(document.getElementById("preview"));
     }
-
     let p = document.createElement("div");
     p.classList.add("preview");
+    p.id = "preview";
     setTimeout(() => {
       p.style.height = "430px";
       p.style.opacity = 1;
     }, 0);
-    p.id = "preview";
     document.getElementById("movies-grid").insertBefore(p, targetElem);
     ReactDOM.render(
       <Preview movie={this.state.movies[clickedItemID]} item={clickedItemID} />,
       p
     );
+
+    p.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    setTimeout(() => {
+      window.scrollBy({
+        top: -100,
+        behavior: "smooth"
+      });
+    }, 200);
   };
 
   render() {
