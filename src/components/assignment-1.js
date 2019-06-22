@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../assets/styles/assignment-1.css";
 
 class Assignment1 extends React.Component {
   state = {
@@ -7,6 +8,10 @@ class Assignment1 extends React.Component {
     finalArray: [],
     duplicatesArray: [],
     userValues: []
+  };
+
+  componentDidMount = () => {
+    document.title = "BMS Assignement 1";
   };
 
   filterRange = () => {

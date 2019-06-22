@@ -1,16 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/images/bms_logo.png";
+import "../assets/styles/home.css";
 
 class Home extends React.Component {
+  componentDidMount = () => {
+    document.title = "BMS Assignement Home";
+  };
+
   render() {
     return (
       <div>
-        {/* <nav className="nav-1">
-          <Link to="/" className="nav-link">
-            {" "}
-            <span>&#8592;</span> Go Back
-          </Link>
-        </nav> */}
+        <nav className="home-nav">
+          <img src={Logo} alt="logo" />
+          <h1>SDE 1 - Assignment</h1>
+        </nav>
+
         <ul>
           <li>
             <Link to="/assignment-1">Go to Assignment 1</Link>

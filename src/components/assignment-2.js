@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/main-logo.png";
-import MovieGrid from "./movie-grid";
+import logo from "../assets/images/main-logo.png";
+import MovieGrid from "./MovieGrid";
 
 class Assignment2 extends React.Component {
   state = {
@@ -9,6 +9,8 @@ class Assignment2 extends React.Component {
   };
 
   componentDidMount = () => {
+    document.title = "BMS Assignement 2";
+
     fetch(
       "https://cors-anywhere.herokuapp.com/https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs"
     )
