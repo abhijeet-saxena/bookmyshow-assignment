@@ -19,7 +19,10 @@ class Assignment1 extends React.Component {
     let finalArray = [];
     let duplicatesArray = [];
 
-    if (userInput !== "") {
+    if (userInput === "") {
+      document.getElementById("range").classList.add("error");
+    } else {
+      document.getElementById("range").classList.remove("error");
       let userValues = userInput.split(",");
       this.setState({
         userValues: userInput.split(",")
@@ -30,13 +33,23 @@ class Assignment1 extends React.Component {
             this.addToFinalArray(finalArray, Number(element));
           else this.addToDuplicatesArray(duplicatesArray, Number(element));
         } else {
-          let lowerLimit = element.split("-")[0];
-          let upperLimit = element.split("-")[1];
-          for (let i = lowerLimit; i <= upperLimit; i++) {
-            if (this.state.existingArray.indexOf(Number(i)) === -1) {
-              this.addToFinalArray(finalArray, Number(i));
-            } else {
-              this.addToDuplicatesArray(duplicatesArray, Number(i));
+          let lowerLimit = Number(element.split("-")[0]);
+          let upperLimit = Number(element.split("-")[1]);
+          if (lowerLimit < upperLimit) {
+            for (let i = lowerLimit; i <= upperLimit; i++) {
+              if (this.state.existingArray.indexOf(Number(i)) === -1) {
+                this.addToFinalArray(finalArray, Number(i));
+              } else {
+                this.addToDuplicatesArray(duplicatesArray, Number(i));
+              }
+            }
+          } else {
+            for (let i = upperLimit; i <= lowerLimit; i++) {
+              if (this.state.existingArray.indexOf(Number(i)) === -1) {
+                this.addToFinalArray(finalArray, Number(i));
+              } else {
+                this.addToDuplicatesArray(duplicatesArray, Number(i));
+              }
             }
           }
         }
@@ -98,18 +111,19 @@ class Assignment1 extends React.Component {
               name="range"
               id="range"
               onKeyPress={this.allowNumerals}
+              placeholder="Enter number/s or range"
             />
             <button onClick={this.filterRange}>Filter</button>
-
-            {/* <div>User Entered Values: {this.state.userValues.join(", ")} </div> */}
-
             {this.state.userValues.length > 0 && (
-              <div>Existing Values: {this.state.existingArray.join(", ")}</div>
+              <div>
+                <strong> Existing Values: </strong>
+                {this.state.existingArray.join(", ")}
+              </div>
             )}
 
             {this.state.userValues.length > 0 && (
               <div>
-                Newly added Values:{" "}
+                <strong>New Values added: </strong>
                 {this.state.finalArray.length > 0
                   ? this.state.finalArray.join(", ")
                   : "No Unique Values found"}{" "}
@@ -118,21 +132,21 @@ class Assignment1 extends React.Component {
 
             {this.state.userValues.length > 0 && (
               <div>
-                Duplicate Values:{" "}
+                <strong>Duplicate Values: </strong>
                 {this.state.duplicatesArray.length > 0
                   ? this.state.duplicatesArray.join(", ")
-                  : "No Duplicate Values found"}
+                  : "No Duplicate Values entered"}
               </div>
             )}
 
             {this.state.userValues.length > 0 && (
               <div>
-                Final Unique Values:{" "}
+                <strong>Final Unique Values: </strong>
                 {this.state.finalArray.length > 0
                   ? [...this.state.existingArray, this.state.finalArray].join(
                       ", "
                     )
-                  : "No Unique Values found"}{" "}
+                  : this.state.existingArray.join(", ")}
               </div>
             )}
           </div>

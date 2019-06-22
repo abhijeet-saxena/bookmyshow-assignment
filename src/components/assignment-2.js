@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/images/main-logo.png";
 import MovieGrid from "./MovieGrid";
+import "../assets/styles/assignment-1.css";
 
 class Assignment2 extends React.Component {
   state = {
@@ -19,7 +20,6 @@ class Assignment2 extends React.Component {
         this.setState({
           languages: data[0],
           moviesData: data[1]
-          // moviesData: [data[1]["ET00015426"]]
         });
       })
       .catch(err => console.log(err));

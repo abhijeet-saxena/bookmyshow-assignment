@@ -4,8 +4,46 @@
   align-items: center;
   width: 100vw;
   border-bottom: solid 1px #eee;
+  margin-bottom: 3rem;
 }
 
 .home-nav img {
   height: 54px;
+}
+
+ul {
+  margin-top: 10rem;
+}
+
+ul li {
+  list-style: none;
+  margin: 3rem;
+  text-align: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #5ac697;
+  font-size: 3rem;
+  border: solid 1px #5ac697;
+  padding: 1rem 5rem;
+  border-radius: 10px;
+  transition: 200ms ease-in-out;
+}
+
+ul li a:hover {
+  color: white;
+  background: #5ac697;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  ul li a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    margin-left: auto;
+    padding-right: 1rem;
+  }
 }

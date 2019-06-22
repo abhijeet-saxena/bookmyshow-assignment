@@ -18,10 +18,10 @@ class Home extends React.Component {
 
         <ul>
           <li>
-            <Link to="/assignment-1">Go to Assignment 1</Link>
+            <Link to="/assignment-1">Assignment 1</Link>
           </li>
           <li>
-            <Link to="/assignment-2">Go to Assignment 2</Link>
+            <Link to="/assignment-2">Assignment 2</Link>
           </li>
         </ul>
       </div>

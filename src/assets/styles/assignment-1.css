@@ -28,6 +28,7 @@
   border-radius: 0.25rem;
   width: 80vw;
   padding: 0 2rem;
+  margin-bottom: 3rem;
 }
 
 .container-1 main .card p {
@@ -36,6 +37,37 @@
 
 .container-1 .card h3 {
   text-align: center;
+}
+
+.solution input {
+  width: 500px;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 3rem;
+}
+
+.solution .error {
+  border: solid 1px red;
+}
+
+.solution button {
+  background: #55bb8e;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 2rem 11px 2rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.solution div {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #888888;
 }
 
 /* Container 2 styles  */
