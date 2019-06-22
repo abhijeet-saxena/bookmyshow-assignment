@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bookmyshow-assignment/static/css/main.7613a8c9.chunk.css",
-    "main.js": "/bookmyshow-assignment/static/js/main.459f23a1.chunk.js",
-    "main.js.map": "/bookmyshow-assignment/static/js/main.459f23a1.chunk.js.map",
+    "main.css": "/bookmyshow-assignment/static/css/main.83a391cd.chunk.css",
+    "main.js": "/bookmyshow-assignment/static/js/main.c847ab95.chunk.js",
+    "main.js.map": "/bookmyshow-assignment/static/js/main.c847ab95.chunk.js.map",
     "runtime~main.js": "/bookmyshow-assignment/static/js/runtime~main.d9165e75.js",
     "runtime~main.js.map": "/bookmyshow-assignment/static/js/runtime~main.d9165e75.js.map",
-    "static/js/2.0aa757d9.chunk.js": "/bookmyshow-assignment/static/js/2.0aa757d9.chunk.js",
-    "static/js/2.0aa757d9.chunk.js.map": "/bookmyshow-assignment/static/js/2.0aa757d9.chunk.js.map",
+    "static/js/2.38b80370.chunk.js": "/bookmyshow-assignment/static/js/2.38b80370.chunk.js",
+    "static/js/2.38b80370.chunk.js.map": "/bookmyshow-assignment/static/js/2.38b80370.chunk.js.map",
     "index.html": "/bookmyshow-assignment/index.html",
-    "precache-manifest.0deeea97209b67b2af04a0f945325eb4.js": "/bookmyshow-assignment/precache-manifest.0deeea97209b67b2af04a0f945325eb4.js",
+    "precache-manifest.33bb4ad27674be68264e1c8a0fe53f47.js": "/bookmyshow-assignment/precache-manifest.33bb4ad27674be68264e1c8a0fe53f47.js",
     "service-worker.js": "/bookmyshow-assignment/service-worker.js",
-    "static/css/main.7613a8c9.chunk.css.map": "/bookmyshow-assignment/static/css/main.7613a8c9.chunk.css.map",
+    "static/css/main.83a391cd.chunk.css.map": "/bookmyshow-assignment/static/css/main.83a391cd.chunk.css.map",
     "static/media/main-logo.png": "/bookmyshow-assignment/static/media/main-logo.dfe0d73a.png"
   }
 }
