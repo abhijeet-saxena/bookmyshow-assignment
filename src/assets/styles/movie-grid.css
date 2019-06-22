@@ -1,0 +1,108 @@
+.container-2 main {
+  border: solid 1px;
+  min-height: 1000px;
+  background: #1c1c1c;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+/* Movie Grid Related CSS */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-rows: auto;
+  grid-row-gap: 3.5rem;
+}
+
+.box {
+  margin-top: auto;
+  min-width: 225px;
+  background: inherit;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.box-inner {
+  width: 175px;
+  height: 225px;
+  background-size: 100% 100%;
+  cursor: pointer;
+  position: relative;
+  transition: 200ms ease-in-out;
+}
+
+.box-inner .fa-play-circle {
+  color: white;
+  font-weight: 300;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  transition: 200ms ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* padding: 25px; */
+  transform: translate(-50%, -50%);
+}
+
+.fa-play-circle:hover {
+  opacity: 1;
+  font-size: 3rem;
+}
+
+.box-inner .show-date {
+  color: white;
+  background: #5ac697;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.55rem;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.box-inner .ratings {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.box-inner .ratings i {
+  color: #5ac697;
+  font-weight: bold;
+  margin-right: 0.4rem;
+  font-size: 12px;
+}
+
+.box-inner .ratings .votes {
+  font-size: 10px;
+  display: block;
+}
+
+.box-inner .title {
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  left: 0px;
+  bottom: -1.5rem;
+  letter-spacing: 1px;
+}
+
+.preview {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  transition: 250ms ease-in;
+}
