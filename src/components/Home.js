@@ -5,6 +5,12 @@ class Home extends React.Component {
   render() {
     return (
       <div>
+        {/* <nav className="nav-1">
+          <Link to="/" className="nav-link">
+            {" "}
+            <span>&#8592;</span> Go Back
+          </Link>
+        </nav> */}
         <ul>
           <li>
             <Link to="/assignment-1">Go to Assignment 1</Link>
