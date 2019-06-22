@@ -1,12 +1,25 @@
 import React from "react";
 import logo from "../assets/main-logo.png";
+import MovieGrid from "./movie-grid";
 
 class Assignment2 extends React.Component {
+  state = {
+    languages: [],
+    moviesData: []
+  };
+
   componentDidMount = () => {
-    console.log(1);
-    fetch("http://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs")
+    fetch(
+      "https://cors-anywhere.herokuapp.com/https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs"
+    )
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        this.setState({
+          languages: data[0],
+          moviesData: data[1]
+          // moviesData: [data[1]["ET00015426"]]
+        });
+      })
       .catch(err => console.log(err));
   };
 
@@ -32,7 +45,13 @@ class Assignment2 extends React.Component {
           </div>
           <i className="fas fa-times" />
         </nav>
-        <main>This will be main content</main>
+        <main>
+          {this.state.languages.length === 0 ? (
+            "Loading"
+          ) : (
+            <MovieGrid moviesData={this.state.moviesData} />
+          )}
+        </main>
       </div>
     );
   }

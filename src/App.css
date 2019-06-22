@@ -94,4 +94,7 @@
 
 .container-2 main {
   border: solid 1px;
+  min-height: 1000px;
+  background: #1c1c1c;
+  padding: 1rem;
 }
