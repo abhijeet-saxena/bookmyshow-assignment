@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bookmyshow-assignment/static/css/main.dd4cc174.chunk.css",
+    "main.css": "/bookmyshow-assignment/static/css/main.4634e9d5.chunk.css",
     "main.js": "/bookmyshow-assignment/static/js/main.88fc24c4.chunk.js",
     "main.js.map": "/bookmyshow-assignment/static/js/main.88fc24c4.chunk.js.map",
     "runtime~main.js": "/bookmyshow-assignment/static/js/runtime~main.d9165e75.js",
@@ -8,9 +8,9 @@
     "static/js/2.c6491bfe.chunk.js": "/bookmyshow-assignment/static/js/2.c6491bfe.chunk.js",
     "static/js/2.c6491bfe.chunk.js.map": "/bookmyshow-assignment/static/js/2.c6491bfe.chunk.js.map",
     "index.html": "/bookmyshow-assignment/index.html",
-    "precache-manifest.e267fbffc47ee7e9cab06497d82721a5.js": "/bookmyshow-assignment/precache-manifest.e267fbffc47ee7e9cab06497d82721a5.js",
+    "precache-manifest.70f06a5894cf4076791f5bf9b60f048c.js": "/bookmyshow-assignment/precache-manifest.70f06a5894cf4076791f5bf9b60f048c.js",
     "service-worker.js": "/bookmyshow-assignment/service-worker.js",
-    "static/css/main.dd4cc174.chunk.css.map": "/bookmyshow-assignment/static/css/main.dd4cc174.chunk.css.map",
+    "static/css/main.4634e9d5.chunk.css.map": "/bookmyshow-assignment/static/css/main.4634e9d5.chunk.css.map",
     "static/media/main-logo.png": "/bookmyshow-assignment/static/media/main-logo.dfe0d73a.png"
   }
 }
