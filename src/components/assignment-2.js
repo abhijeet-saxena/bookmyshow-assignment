@@ -46,6 +46,8 @@ class Assignment2 extends React.Component {
           <i className="fas fa-times" />
         </nav>
         <main>
+          <p style={{ color: "#929292" }}>Applied filters </p>
+
           {this.state.languages.length === 0 ? (
             "Loading"
           ) : (

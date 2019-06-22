@@ -71,7 +71,7 @@
 }
 
 .nav-right button {
-  background: transparent;
+  background: inherit;
   color: #5ac697;
   border: solid 1px #5ac697;
   border-radius: 5px;
@@ -96,5 +96,10 @@
   border: solid 1px;
   min-height: 1000px;
   background: #1c1c1c;
-  padding: 1rem;
+  /* background-image: url("https://in.bmscdn.com/events/moviecard/ET00103502.jpg"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0rem 1rem 1rem 1rem;
 }

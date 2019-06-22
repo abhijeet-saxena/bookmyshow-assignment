@@ -7,7 +7,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/bookmyshow-assignment">
       <Switch>
         <Route path="/home" exact component={Home} />
         <Route path="/assignment-1" exact component={Assignment1} />

@@ -1,5 +1,7 @@
 import React from "react";
 import "../grid-styles.css";
+import Preview from "./movie-preview";
+import ReactDOM from "react-dom";
 
 class MovieGrid extends React.Component {
   state = {
@@ -7,7 +9,6 @@ class MovieGrid extends React.Component {
   };
 
   componentDidMount = () => {
-    // console.log(this.props.moviesData);
     this.setState({
       movies: Object.values(this.props.moviesData).map(movie => ({
         EventTitle: movie.EventTitle,
@@ -60,11 +61,15 @@ class MovieGrid extends React.Component {
     let p = document.createElement("div");
     p.classList.add("preview");
     setTimeout(() => {
-      p.style.height = "100px";
+      p.style.height = "430px";
       p.style.opacity = 1;
     }, 0);
     p.id = "preview";
     document.getElementById("movies-grid").insertBefore(p, targetElem);
+    ReactDOM.render(
+      <Preview movie={this.state.movies[clickedItemID]} item={clickedItemID} />,
+      p
+    );
   };
 
   render() {
@@ -101,6 +106,3 @@ class MovieGrid extends React.Component {
 }
 
 export default MovieGrid;
-{
-  /* <p style={{ color: "#929292" }}>Applied filters </p> */
-}
