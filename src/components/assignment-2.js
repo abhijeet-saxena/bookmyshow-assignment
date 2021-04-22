@@ -6,23 +6,29 @@ import "../assets/styles/assignment-1.css";
 class Assignment2 extends React.Component {
   state = {
     languages: [],
-    moviesData: []
+    moviesData: [],
   };
 
   componentDidMount = () => {
     document.title = "BMS Assignement 2";
 
     fetch(
-      "https://cors-anywhere.herokuapp.com/https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs"
+      "https://cors-anywhere.herokuapp.com/https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs",
+      {
+        method: "GET",
+        headers: {
+          "X-Requested-With": "bookmyshow-assignement",
+        },
+      }
     )
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         this.setState({
           languages: data[0],
-          moviesData: data[1]
+          moviesData: data[1],
         });
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   };
 
   render() {
