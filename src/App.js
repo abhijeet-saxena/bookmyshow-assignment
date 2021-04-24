@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, HashRouter, Switch } from "react-router-dom";
-import Assignment1 from "./components/Assignment-1";
-import Assignment2 from "./components/Assignment-2";
+import Assignment1 from "./components/assignment-1";
+import Assignment2 from "./components/assignment-2";
 import Home from "./components/Home";
 
 function App() {
