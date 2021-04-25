@@ -21,12 +21,13 @@
 .container-1 main {
   align-self: center;
   margin-top: 1rem;
+  width: 80%;
 }
 
 .container-1 main .card {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  width: 80vw;
+  width: 90%;
   padding: 0 2rem;
   margin-bottom: 3rem;
 }
