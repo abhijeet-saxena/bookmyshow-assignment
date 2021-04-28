@@ -5,19 +5,18 @@ class Preview extends React.Component {
   state = {};
 
   componentDidMount = () => {
-    console.log(this.props.movie);
     if (this.props.movie && this.props.movie.TrailerURL) {
       if (this.props.movie.TrailerURL.indexOf(".com") !== -1) {
         this.setState({
           trailerURL: `https://www.youtube.com/embed/${
             this.props.movie.TrailerURL.split("=")[1].split("&")[0]
-          }`
+          }`,
         });
       } else {
         this.setState({
           trailerURL: `https://www.youtube.com/embed/${
             this.props.movie.TrailerURL.split("/").reverse()[0]
-          }`
+          }`,
         });
       }
     }
@@ -40,7 +39,7 @@ class Preview extends React.Component {
           <h3>{this.props.movie.EventTitle}</h3>
           <p className="language">{this.props.movie.EventLanguage}</p>
           <div className="badges">
-            {this.props.movie.EventGenre.split("|").map(genre => (
+            {this.props.movie.EventGenre.split("|").map((genre) => (
               <span key={genre}>{genre}</span>
             ))}
           </div>
