@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/bookmyshow-assignment/static/css/main.4634e9d5.chunk.css",
-    "main.js": "/bookmyshow-assignment/static/js/main.40fb54d4.chunk.js",
-    "main.js.map": "/bookmyshow-assignment/static/js/main.40fb54d4.chunk.js.map",
-    "runtime~main.js": "/bookmyshow-assignment/static/js/runtime~main.d9165e75.js",
-    "runtime~main.js.map": "/bookmyshow-assignment/static/js/runtime~main.d9165e75.js.map",
-    "static/js/2.c6491bfe.chunk.js": "/bookmyshow-assignment/static/js/2.c6491bfe.chunk.js",
-    "static/js/2.c6491bfe.chunk.js.map": "/bookmyshow-assignment/static/js/2.c6491bfe.chunk.js.map",
+    "main.css": "/bookmyshow-assignment/static/css/main.b71a88a2.chunk.css",
+    "main.js": "/bookmyshow-assignment/static/js/main.0aef78ba.chunk.js",
+    "main.js.map": "/bookmyshow-assignment/static/js/main.0aef78ba.chunk.js.map",
+    "runtime-main.js": "/bookmyshow-assignment/static/js/runtime-main.4f4e81e6.js",
+    "runtime-main.js.map": "/bookmyshow-assignment/static/js/runtime-main.4f4e81e6.js.map",
+    "static/js/2.50f09d28.chunk.js": "/bookmyshow-assignment/static/js/2.50f09d28.chunk.js",
+    "static/js/2.50f09d28.chunk.js.map": "/bookmyshow-assignment/static/js/2.50f09d28.chunk.js.map",
     "index.html": "/bookmyshow-assignment/index.html",
-    "precache-manifest.90188dabf40b7929a13e866c05b48e5e.js": "/bookmyshow-assignment/precache-manifest.90188dabf40b7929a13e866c05b48e5e.js",
+    "precache-manifest.b4db16477c073a19a85fc12327f2e362.js": "/bookmyshow-assignment/precache-manifest.b4db16477c073a19a85fc12327f2e362.js",
     "service-worker.js": "/bookmyshow-assignment/service-worker.js",
-    "static/css/main.4634e9d5.chunk.css.map": "/bookmyshow-assignment/static/css/main.4634e9d5.chunk.css.map",
+    "static/css/main.b71a88a2.chunk.css.map": "/bookmyshow-assignment/static/css/main.b71a88a2.chunk.css.map",
+    "static/js/2.50f09d28.chunk.js.LICENSE.txt": "/bookmyshow-assignment/static/js/2.50f09d28.chunk.js.LICENSE.txt",
     "static/media/main-logo.png": "/bookmyshow-assignment/static/media/main-logo.dfe0d73a.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f4e81e6.js",
+    "static/js/2.50f09d28.chunk.js",
+    "static/css/main.b71a88a2.chunk.css",
+    "static/js/main.0aef78ba.chunk.js"
+  ]
 }
